@@ -32,6 +32,6 @@ class CartAction
 
     public static function checkout($user)
     {
-        CartRepository::getOrCreateLatestCart($user);
+        CartRepository::handleCheckoput($user);
     }
 }
